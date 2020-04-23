@@ -1,0 +1,134 @@
+doctype html
+head
+  title &#x8CA1;&#x8CBF;&#x96D9;&#x5168;login
+  script(src='httpscode.jquery.comjquery-3.3.1.min.js')
+  link(rel='stylesheet' type='textcss' href='.index.css')
+  link(rel='shortcut icon' href='.resfavicon.ico')
+ ========= first  ================================================================================
+#out_1
+  table#first
+    tr
+      td(style='text-alignright;font-weightbold;')
+         logo
+        img#cash(src='.res1stlogo-demo.png')
+    tr
+      td(style='text-alignright;font-weightbold;')
+         填資料表
+         form [ajax-form] ajax取值
+        form#ajax-form
+           id=ajax-form,type=submit field name[html的]
+          input.key(type='text' name='fName' placeholder='Account')
+          br
+          input.key(type='Password' name='lName' placeholder='Password')
+          br
+          img#forgot(src='.res1stforgot-button.png')
+          br
+          button#login(type='submit')
+            img#log(src='.res1stlogin.png')
+ ========= srcond  ================================================================================
+ form [ajax-output] ajax回顯
+ div id=out_2
+#out
+  #ajax-lside &#x3161;&#x3161;
+  #ajax-output
+  #ajax-rside &#x3161;&#x3161;
+ 歡迎詞
+ div
+ ========= third  ================================================================================
+ form [ajax-output] ajax回顯
+#out_3
+  #out_sub
+    #TopRegion
+    .mainInterface
+      #out_c
+         總  信用卡資料排版
+        #card_base
+          #card_base_synopsis
+             &#x570B;&#x5167;1.22%&#x3001;&#x570B;&#x5916;2.22%
+            br
+             &#x73FE;&#x91D1;&#x56DE;&#x994B;&#x7121;&#x4E0A;&#x9650;
+          #card_base_image
+            img#card(src='.res3rdcard1.png')
+        #card_base
+           單一信用卡資料排版
+          #card_base_synopsis
+             &#x570B;&#x5167;1%&#x3001;&#x570B;&#x5916;2%
+            br
+             &#x73FE;&#x91D1;&#x56DE;&#x994B;&#x7121;&#x4E0A;&#x9650;
+          #card_base_image
+            img#card(src='.res3rdcard2.png')
+        #card_base
+           單一信用卡資料排版[預留卷軸用隱藏排版]
+          #card_base_synopsis
+            br
+          #card_base_image
+            img#card(src='.res3rdcard-base.png')
+      #cardInfo
+        #cardInfo_Name
+          font &#x6C38;&#x8C50;&#x767D;&#x91D1;&#x5361;
+        #cardInfo_Image
+          img(src='.rescommentcard.png' style='width 100%;')
+        #cardInfo_Details.box
+          #cardInfo_Details_Paragraph
+            p
+               asdasdssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssasdasdasdasdasdasdasdasdasdasdasdasdas
+          #cardInfo_Details_Expend
+            img(src='.rescommentexpend1.png')
+        #cardInfo_CommentList.box
+          #cardInfo_CommentList_Star
+          #cardInfo_CommentList_Region
+            #cardInfo_CommentList_Comment
+              #cardInfo_CommentList_Comment_NameAndRate
+                span NG&#x54E5;
+              p
+                 &#x8D85;&#x5BE6;&#x7528;&#xFF01;&#x5F88;&#x591A;&#x6D88;&#x8CBB;&#x90FD;&#x80FD;&#x4F7F;&#x7528;&#xFF0C;&#x56DE;&#x994B;&#x5F88;&#x591A;&#xFF0C;&#x5237;&#x8D77;&#x4F86;&#x6C92;&#x611F;&#x89BA;~~
+            #cardInfo_CommentList_Comment
+              #cardInfo_CommentList_Comment_NameAndRate
+                span asdads
+              p
+                 &#x8D85;&#x5BE6;&#x7528;&#xFF01;&#x5F88;&#x591A;&#x6D88;&#x8CBB;&#x90FD;&#x80FD;&#x4F7F;&#x7528;&#xFF0C;&#x56DE;&#x994B;&#x5F88;&#x591A;&#xFF0C;&#x5237;&#x8D77;&#x4F86;&#x6C92;&#x611F;&#x89BA;~~
+            #cardInfo_CommentList_Region_Expend
+               &#x67E5;&#x770B;&#x66F4;&#x591A;&#x6D41;&#x8A00;
+              br
+              img(src='.rescommentUntitled.png' style='margin -1.5% 0;')
+        #cardInfo_InputComment.box
+           &#x7559;&#x8A00;
+          #cardInfo_CommentList_Comment
+            #cardInfo_CommentList_Comment_NameAndRate
+              span NG&#x54E5;
+            p
+              br
+    #BottomRegion
+   頁底
+  #Header 123
+   頭貼
+  img#bottom(src='.res3rdbar.png')
+   頁底粉紅框
+ JavaScript
+ JavaScript
+script(type='textjavascript').
+  var URL = document.location.toString();
+  var useragent = navigator.userAgent;
+  useragent = useragent.toLowerCase();
+  if( useragent.indexOf('iphone') != -1 ){;alert(1);iphone
+  }
+  else if( useragent.indexOf('ipad') != -1  useragent.indexOf('ipod') != -1) {;alert(2);ipad
+  }
+  else if( useragent.indexOf('android') != -1 ) {
+  if( ConsiderLimits() )
+  {
+  ;alert(3);  android pad
+  }else{
+  ;alert(4);  android phone
+  }
+  }
+  else{
+  alert(~歡迎使用電腦版網頁💻~n☛ 但若能用手機開啟 直式 頁面，體驗會更佳~);  PC
+  }
+  function ConsiderLimits() {
+  if( screen.width = 1024 && screen.height = 600 )
+  return 1;
+  return 0;
+  }
+  alert(~歡迎光臨~n帳號密碼目前未設定n任意輸入即可登入~);
+script(src='.exercise.js')
